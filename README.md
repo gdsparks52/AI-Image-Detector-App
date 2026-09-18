@@ -1,1 +1,3 @@
 # AI-Image-Detector-App
+this is just not working yet...
+standby

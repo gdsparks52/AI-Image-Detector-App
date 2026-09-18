@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Dependencies
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# App Uploads & Temp Media (keep directory structure, ignore content)
+uploads/*
+!uploads/.gitkeep
+tmp/
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# Docker & Container Artifacts
+.docker/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# PyTorch / Hugging Face Model Caches & Weights
+*.pt
+*.pth
+*.bin
+*.safetensors
+.cache/
+huggingface/
