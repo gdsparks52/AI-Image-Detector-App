@@ -1,6 +1,8 @@
 # AI-Image-Detector-App
-this is just not working yet...
-standby
+
+this is just not working yet...☠️🤡
+
+standby🤪🤪
 
 A lightweight, containerized Python web application built with **FastAPI** and **Docker**. This application provides an interactive web interface for uploading images, running computer vision & machine learning inference, and analyzing image artifacts across any operating system.
 
