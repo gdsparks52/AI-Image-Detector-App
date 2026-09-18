@@ -28,14 +28,35 @@ Image Detector/
 ├── .gitignore               # Excludes virtual environments, caches, and upload files
 ├── Dockerfile               # Container build configuration
 └── requirements.txt         # Python dependencies
-
+```
 ---
 
-## Runn Instructions
+## Running with Docker
 
-- Have Docker Running in Background
-- docker build -t image-detector-app .
-- macOS: docker run -d -p 8000:8000 -v "$(pwd)/uploads:/uploads" --name image_app image-detector-app
-- Windows Powershell: docker run -d -p 8000:8000 -v "${PWD}/uploads:/uploads" --name image_app image-detector-app
-- Windows Command Prompt: docker run -d -p 8000:8000 -v "%cd%/uploads:/uploads" --name image_app image-detector-app
-- http://localhost:8000
+Running inside Docker ensures complete cross-platform compatibility (macOS, Windows, Linux) without needing local Python setup.
+
+### 1. Prerequisites
+- Docker Desktop installed and running.
+
+### 2. Build the Docker Image
+
+Navigate to your project root directory and build the container image:
+
+docker build -t image-detector-app .
+
+### 3. Run the Container
+
+Run the container in detached mode, mapping port 8000 and mounting the local uploads/ folder to persist uploaded images:
+
+macOS / Linux (Zsh or Bash):
+docker run -d -p 8000:8000 -v "$(pwd)/uploads:/uploads" --name image_app image-detector-app
+
+Windows (PowerShell):
+docker run -d -p 8000:8000 -v "${PWD}/uploads:/uploads" --name image_app image-detector-app
+
+Windows (Command Prompt):
+docker run -d -p 8000:8000 -v "%cd%/uploads:/uploads" --name image_app image-detector-app
+
+### 4. Access the Web UI
+
+Open your browser and navigate to: http://localhost:8000
